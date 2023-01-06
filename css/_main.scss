@@ -1,14 +1,20 @@
 @use "mixin" as m;
 @use "set";
 
-.copy_obj{
-	.open{
-		.copy_button{
-			width: 100px;
-			height: 50px;
-			background-color: #000;
-			color: #fff;
-			cursor: pointer;
-		}
+.copy_list{
+	.change{
+		display: none;
 	}
+	.open{
+		cursor: pointer;
+	}
+	.copy_button{
+		text-align: center;
+		width: 100px;
+		height: 50px;
+		background-color: #000;
+		color: #fff;
+		cursor: pointer;
+	}
+
 }

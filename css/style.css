@@ -1,4 +1,11 @@
-.copy_obj .open .copy_button {
+.copy_list .change {
+  display: none;
+}
+.copy_list .open {
+  cursor: pointer;
+}
+.copy_list .copy_button {
+  text-align: center;
   width: 100px;
   height: 50px;
   background-color: #000;

@@ -85,6 +85,10 @@ header h1 {
   background-color: rgb(228, 227, 227);
 }
 
+.copy_list {
+  position: relative;
+  padding-bottom: 100px;
+}
 .copy_list .change {
   margin-top: 10px;
   padding: 20px 10px;
@@ -113,4 +117,16 @@ header h1 {
 .copy_list pre {
   width: 94%;
   overflow-x: hidden;
+}
+.copy_list .all_hide_button {
+  position: absolute;
+  right: 80px;
+  bottom: 20px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-family: ab-tsubaki, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

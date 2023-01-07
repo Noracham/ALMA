@@ -16,4 +16,10 @@ $(function(){
 		// document.execCommand("copy");
 
 	})
+	$(".all_hide_button").on("click",function(){
+		for(let i = 0; i < cg_ary.length; i++){
+			cg_ary[i] = 0;
+		}
+		$(".change").hide("fast");
+	})
 })

@@ -1,8 +1,17 @@
+a {
+  color: rgb(70, 0, 67);
+  font-size: 15px;
+}
+
 .copy_list .change {
   display: none;
 }
 .copy_list .open {
+  list-style-type: none;
   cursor: pointer;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .copy_list .copy_button {
   text-align: center;
@@ -11,4 +20,7 @@
   background-color: #000;
   color: #fff;
   cursor: pointer;
+}
+.copy_list pre {
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */

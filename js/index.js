@@ -1,5 +1,4 @@
 $(function(){
-	let change = false;
 	let cg_ary = [0,0,0,0,0,0,0,0,0,0];
 
 	$(".open").on("click",function(){

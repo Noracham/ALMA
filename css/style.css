@@ -1,17 +1,79 @@
-a {
-  color: rgb(70, 0, 67);
-  font-size: 15px;
+body {
+  background-color: rgb(228, 227, 227);
 }
 
+a {
+  color: rgb(70, 0, 67);
+  font-size: 20px;
+  font-family: ab-tsubaki, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: ab-tsubaki, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  background-color: #000;
+}
+header h1 {
+  font-size: 50px;
+  font-family: bungee, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  color: #fff;
+}
+
+.copy_app .center {
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+}
+.copy_app .center::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 50%;
+  border-bottom: 3px solid #000;
+}
+.copy_app .center h1 {
+  padding: 0 30px;
+  justify-self: center;
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+  z-index: 2;
+  background-color: rgb(228, 227, 227);
+}
+
+.copy_list {
+  background-color: #fff;
+  margin: 0 3%;
+  padding: 40px 20px;
+  border-radius: 50px;
+}
 .copy_list .change {
   display: none;
 }
 .copy_list .open {
   list-style-type: none;
   cursor: pointer;
+  font-size: 25px;
+  font-family: ab-tsubaki, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.copy_list .open:not(:first-child) {
   margin-top: 30px;
-  font-size: 20px;
-  font-weight: bold;
 }
 .copy_list .copy_button {
   text-align: center;
@@ -22,5 +84,5 @@ a {
   cursor: pointer;
 }
 .copy_list pre {
-  width: 90%;
+  width: 95%;
 }/*# sourceMappingURL=style.css.map */

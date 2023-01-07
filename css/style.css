@@ -20,7 +20,7 @@ h1 {
   background-color: #fff;
   margin: 70px 3%;
   padding: 50px 25px;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 li {
@@ -90,6 +90,7 @@ header h1 {
   padding-bottom: 100px;
 }
 .copy_list .change {
+  border-radius: 10px;
   margin-top: 10px;
   padding: 20px 10px;
   display: none;

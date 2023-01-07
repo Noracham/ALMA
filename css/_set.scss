@@ -16,10 +16,22 @@ h1{
     font-style: normal;
 }
 .frame{
+	position: relative;
 	background-color: #fff;
 	margin: 70px 3%;
 	padding: 50px 25px;
 	border-radius: 20px;
+	li{
+		list-style-type: none;
+		cursor: pointer;
+		font-size: 25px;
+		font-family: ab-tsubaki, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		&:not(:first-child){
+			margin-top: 30px;
+		}	
+	}
 }
 li{
 	list-style-type: none;
@@ -27,4 +39,27 @@ li{
     font-weight: 400;
     font-style: normal;
 	font-size: 25px;
+}
+.center{
+	margin-top: 50px;
+	position: relative;
+	text-align: center;
+	&::before{
+		position: absolute;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 50%;
+		border-bottom: 3px solid #000;
+	}
+
+	h1{
+		padding: 0 30px;
+		justify-self: center;
+		display: inline-block;
+		position: relative;
+		font-size: 40px;
+		z-index: 2;
+		background-color: rgb(228, 227, 227);
+	}
 }

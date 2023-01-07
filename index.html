@@ -9,13 +9,34 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <title>OLMA</title>
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'xso1hgy',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: "xso1hgy",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
   </head>
@@ -24,11 +45,18 @@
       <h1>ALMA</h1>
     </header>
     <section class="rule">
-      <ul class="frame">
+      <ul class="frame main">
         <li>🚨 基本的には個人利用を目的としております。</li>
         <li>👉 これよく使うなーというモノをメモ感覚でのせております。</li>
-        <li>👉 利用したいタイトルをクリックすることでコード等が展開し、表示されます。<br>　 コピー又はダウンロードの上ご利用ください。</li>
-        <li>👉 ツールをご利用の場合、参照先サイトの利用規約等をご理解の上でご利用ください。</li>
+        <li>
+          👉
+          利用したいタイトルをクリックすることでコード等が展開し、表示されます。<br />　
+          コピー又はダウンロードの上ご利用ください。
+        </li>
+        <li>
+          👉
+          ツールをご利用の場合、参照先サイトの利用規約等をご理解の上でご利用ください。
+        </li>
         <li>どうでもいいですが<span>「ALMA」=「ALL MASTER」</span>です。</li>
       </ul>
     </section>
@@ -36,19 +64,19 @@
       <div class="center"><h1>コード一覧</h1></div>
       <ul class="copy_list frame">
         <li class="open">🌟 jQuery CDN(ver-3.6.1)</li>
-        <div class="change">
-        <pre
-          class="line-numbers"
-        ><code class="language-html"> &lt;script src=&quot;https://code.jquery.com/jquery-3.6.1.js&quot; integrity=&quot;sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</code></pre>
-        <a href="https://jquery.com/" target="_blank">ダウンロードはこちら</a>
+        <div class="change change_style">
+          <pre
+            class="line-numbers"
+          ><code class="language-html"> &lt;script src=&quot;https://code.jquery.com/jquery-3.6.1.js&quot; integrity=&quot;sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</code></pre>
+          <a href="https://jquery.com/" target="_blank">ダウンロードはこちら</a>
         </div>
         <!-- <button class="copy_button">COPY</button> -->
 
         <li class="open">🌟 HTML必要タグ集</li>
-        <div class="change">
-        <pre
-          class="line-numbers"
-        ><code class="language-html"> &lt;!DOCTYPE html&gt;
+        <div class="change change_style">
+          <pre
+            class="line-numbers"
+          ><code class="language-html"> &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;ja&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -59,15 +87,15 @@
 &lt;body&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-</div>
+        </div>
 
         <li class="open">
           🌟 HTML必要タグ集（CSS,JavaScript（jQuery）読み込み有）
         </li>
-        <div class="change">
-        <pre
-          class="line-numbers"
-        ><code class="language-html"> &lt;!DOCTYPE html&gt;
+        <div class="change change_style">
+          <pre
+            class="line-numbers"
+          ><code class="language-html"> &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;ja&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -81,15 +109,13 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-</div>
+        </div>
 
         <li class="open">
           🌟 SCSS(Sass)レスポンシブ対応用ファイル[ _mixin.scss ]
         </li>
-        <div class="change">
-        <pre
-          class="line-numbers"
-        ><code class="language-sass">$breakpoint: (
+        <div class="change change_style">
+          <pre class="line-numbers"><code class="language-sass">$breakpoint: (
   tab: &#039;screen and (max-width: 1024px)&#039;,
   sp: &#039;screen and (max-width: 768px)&#039;
 );
@@ -99,37 +125,37 @@
    @content;
   }
 }</code></pre>
-</div>
+        </div>
 
         <li class="open">
           🌟 SCSS(Sass)集約、コンパイル用ファイル[ style.scss ]
         </li>
-        <div class="change">
-        <pre
-          class="line-numbers"
-        ><code class="language-sass">@use &quot;variables&quot;;
+        <div class="change change_style">
+          <pre
+            class="line-numbers"
+          ><code class="language-sass">@use &quot;variables&quot;;
 @use &quot;mixin&quot;;
 @use &quot;set&quot;;
 @use &quot;main&quot;;</code></pre>
-</div>
+        </div>
 
         <li class="open">🌟 SCSS(Sass)mixinレスポンシブ書き方</li>
-        <div class="change">
-        <pre
-          class="line-numbers"
-        ><code class="language-sass">//タブレット ※_mixin.scss必須
+        <div class="change change_style">
+          <pre
+            class="line-numbers"
+          ><code class="language-sass">//タブレット ※_mixin.scss必須
 @include m.mq(tab){
 }
 //スマホ　※_mixin.scss必須
 @include m.mq(sp){
 }</code></pre>
-</div>
+        </div>
 
-<li class="open">🌟 normalize.css</li>
-<div class="change">
-<pre
-  class="line-numbers"
-><code class="language-css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+        <li class="open">🌟 normalize.css</li>
+        <div class="change change_style">
+          <pre
+            class="line-numbers"
+          ><code class="language-css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -478,18 +504,31 @@
   [hidden] {
     display: none;
   }</code></pre>
-<a href="https://necolas.github.io/normalize.css/" target="_blank">ダウンロードはこちら</a>
-</div>
+          <a href="https://necolas.github.io/normalize.css/" target="_blank"
+            >ダウンロードはこちら</a
+          >
+        </div>
 
-<button class="all_hide_button">全てとじる</button>
+        <button class="all_hide_button">全てとじる</button>
       </ul>
-
     </section>
-    
+
     <section class="tools">
       <div class="center"><h1>便利ツール</h1></div>
-      <ul class="frame">
-        <li></li>
+      <ul class="frame tool_list">
+        <li class="">🛠 HTML エスケープ文字に変換する</li>
+        <li class="">🛠 CSSの品質をチェックする</li>
+        <li class="">🛠 CSS グラデーションジェネレーター</li>
+        <li class="">🛠 CSS border-radiusジェネレーター</li>
+        <li class="">🛠 CSS アニメーションジェネレーター</li>
+        <li class="">🛠 CSS(Sass) カラーコードなどを変数化してくれる</li>
+        <li class="">🛠 CSS Font-familyを管理する</li>
+        <li class="">🛠 Canva</li>
+        <li class="">🛠 画サイズ変更</li>
+        <li class="">🛠 コードうめ込みツール（prism.js）</li>
+
+
+        <button class="all_hide_button">全てとじる</button>
       </ul>
     </section>
 

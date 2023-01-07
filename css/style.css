@@ -24,15 +24,28 @@ h1 {
   border-radius: 20px;
 }
 .frame li {
-  list-style-type: none;
   cursor: pointer;
-  font-size: 25px;
-  font-family: ab-tsubaki, sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 .frame li:not(:first-child) {
   margin-top: 30px;
+}
+.frame .change_style {
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px 10px;
+  background-color: rgb(228, 227, 227);
+}
+.frame button {
+  position: absolute;
+  right: 80px;
+  bottom: 20px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-family: ab-tsubaki, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
 li {
@@ -82,15 +95,15 @@ header h1 {
   color: #fff;
 }
 
-.frame li:not(:first-child) {
+.main li:not(:first-child) {
   margin-top: 30px;
 }
-.frame li:last-child {
+.main li:last-child {
   font-size: 30px;
   text-align: center;
   padding: 30px 0;
 }
-.frame li span {
+.main li span {
   font-family: bungee, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -101,25 +114,13 @@ header h1 {
   padding-bottom: 100px;
 }
 .copy_list .change {
-  border-radius: 10px;
-  margin-top: 10px;
-  padding: 20px 10px;
   display: none;
-  background-color: rgb(228, 227, 227);
 }
 .copy_list pre {
   width: 94%;
   overflow-x: hidden;
 }
-.copy_list .all_hide_button {
-  position: absolute;
-  right: 80px;
-  bottom: 20px;
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-  font-family: ab-tsubaki, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
+
+.tool_list {
+  padding-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */

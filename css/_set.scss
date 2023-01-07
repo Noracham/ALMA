@@ -22,15 +22,28 @@ h1{
 	padding: 50px 25px;
 	border-radius: 20px;
 	li{
-		list-style-type: none;
 		cursor: pointer;
-		font-size: 25px;
-		font-family: ab-tsubaki, sans-serif;
-		font-weight: 400;
-		font-style: normal;
 		&:not(:first-child){
 			margin-top: 30px;
 		}	
+	}
+	.change_style {
+		border-radius: 10px;
+		margin-top: 10px;
+		padding: 20px 10px;
+		background-color: rgb(228, 227, 227);
+	}
+	button{
+		position: absolute;
+		right: 80px;
+		bottom: 20px;
+		padding: 10px;
+		background-color: #000;
+		color: #fff;
+		font-family: ab-tsubaki, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 20px;	
 	}
 }
 li{

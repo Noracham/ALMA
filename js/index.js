@@ -20,6 +20,8 @@ $(function(){
 
 		if(tool_ary[index] ==  0){
 			$(".change_tool").eq(index).show("fast");
+			$(".change_tool").eq(index).css({"display":"flex"});
+			$(".change_tool").eq(index).css({"flex-direction":"column"});
 			tool_ary[index] = 1;
 		}else{
 			$(".change_tool").eq(index).hide("fast");

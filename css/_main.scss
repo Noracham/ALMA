@@ -34,8 +34,6 @@ header {
     }
   }
 }
-.copy_app {
-}
 .copy_list {
   padding-bottom: 100px;
   .change {
@@ -47,10 +45,17 @@ header {
   }
 }
 .tool_list{
-	padding-bottom: 100px;
-}
-.tool_list{
+  padding-bottom: 100px;
   .change_tool{
     display: none;
+  }
+  .open_tool{
+    .change_tool{
+      flex-direction: column;
+      a{
+        display: block;
+        margin: 3%;
+      }
+    }
   }
 }

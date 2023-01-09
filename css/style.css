@@ -124,7 +124,13 @@ header h1 {
 .tool_list {
   padding-bottom: 100px;
 }
-
 .tool_list .change_tool {
   display: none;
+}
+.tool_list .open_tool .change_tool {
+  flex-direction: column;
+}
+.tool_list .open_tool .change_tool a {
+  display: block;
+  margin: 3%;
 }/*# sourceMappingURL=style.css.map */

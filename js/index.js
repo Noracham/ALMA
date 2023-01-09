@@ -34,5 +34,10 @@ $(function(){
 			cg_ary[i] = 0;
 		}
 		$(".change").hide("fast");
+
+		for(let i = 0; i < tool_ary.length; i++){
+			tool_ary[i] = 0;
+		}
+		$(".change_tool").hide("fast");
 	})
 })

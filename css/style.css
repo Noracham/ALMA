@@ -35,6 +35,9 @@ h1 {
   padding: 20px 10px;
   background-color: rgb(228, 227, 227);
 }
+.frame .change_style pre {
+  width: auto;
+}
 .frame button {
   position: absolute;
   right: 80px;
@@ -132,5 +135,4 @@ header h1 {
 }
 .tool_list .open_tool .change_tool a {
   display: block;
-  margin: 3%;
 }/*# sourceMappingURL=style.css.map */
